@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Urbanist:wght@500&display=swap");
+
+body {
+  background: #28282b;
+  margin-bottom: 5%;
+}
+
+.Intro {
+  margin-bottom: 1%;
+  width: 66%;
+  text-align: center;
+}
+
+.Intro h1 {
+  color: #fff;
+  font-family: "Urbanist", sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.Intro p {
+  color: #e5e4e2;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.ConnectionDetails {
+  width: 66%;
+  border-radius: 23px;
+  padding: 4%;
+  background: #1e1e1e;
+}
+
+.SelectDB {
+  color: #e5e4e2;
+  font-family: "Poppins", sans-serif;
+  font-size: var(--bs-body-font-size);
+  display: flex;
+  gap: 3%;
+  padding-bottom: 1%;
+}
+
+.form-label,
+.form-control {
+  color: #e5e4e2;
+  font-family: "Poppins", sans-serif;
+  background-color: #1e1e1e;
+}
+
+.btn-primary {
+  margin-top: 3%;
+  display: inline-flex;
+  padding: 20px 26px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-color: #8a9a5b;
+  border-radius: 20px;
+  background: #8a9a5b;
+  color: #fff;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.btn-primary:hover {
+  background: #5d5a5a;
+  border-color: #666362;
+}
+
+.PortDBName {
+  width: 100%;
+  display: flex;
+  gap: 3%;
+}
+.PortDBName > * {
+  flex-grow: 1;
+}
