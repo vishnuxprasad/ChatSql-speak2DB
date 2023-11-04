@@ -21,3 +21,6 @@
 .HomeNavBar .NavBarR > *{
     margin: 0 10px 0 10px;
 }
+.btn{
+    padding:10px;
+}

@@ -1,7 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Urbanist:wght@500&display=swap");
+
 body{
     background-color: #28282b;
-    color: #E5E4E2;
+    color: rgba(255, 255, 255, 0.54);
+    font-family: Poppins;
+    font-style: normal;
   }
+
+  .HomeNavBar {
+    padding:16px;
+    display: flex;
+    gap: 70%;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.HomeNavBar .Logo{
+    flex:1;
+    padding:35px;
+}
+
+.HomeNavBar .NavBarR{
+    flex: 0.8;
+    display: flex;
+    justify-content: space-around;
+}
+
+.HomeNavBar .NavBarR > *{
+    margin: 0 10px 0 10px;
+}
+
+.btn-style{
+  border-radius: 15px;
+  padding: 15px;
+}
     .messages-box {
       flex: 1;
       overflow-y: auto;
@@ -12,15 +46,18 @@ body{
     }
 
     .message {
-      margin-left:10%;
+      margin-left:15%;
       margin-bottom: 15px;
       list-style: none;
-      border-radius: 15px;
+      border-radius: 10px;
       height: auto;
-      padding-left: 10px;
-      width:80%;
+      padding: 10px;
+      width:70%;
     }
+    .message-sender{
+      margin-bottom:10px;
 
+    }
     .message-text {
       padding: 10px;
       border-radius: 20px;
@@ -54,14 +91,14 @@ body{
       border-right: none;
       border-radius: 10px;
       background: #1E1E1E;
-      height: 45px
+      height: 60px
     }
 
     .btn-submit {
       bottom: 0px;
       border-radius: 10px;
       background: #8A9A5B;
-      height: 45px;
+      height: 60px;
     }
 
     .message-box-color {
