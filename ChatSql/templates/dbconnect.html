@@ -34,44 +34,52 @@
       <div class="container ConnectionDetails">
         <div class="SelectDB">
           <div class="SelectDBTxt">
-            <p>choose your database</p>
+            <p>Choose your database</p>
           </div>
-          <div class="dropdown">
-            <button
-              class="btn btn-secondary dropdown-toggle"
-              type="button"
-              id="dropdownMenu2"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              MySQL
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-              <button class="dropdown-item" type="button">MySQL</button>
-              <button class="dropdown-item" type="button">ProstgreSQL</button>
+          <div class="DBRadio">
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="inlineRadioOptions"
+                id="inlineRadio1"
+                value="option1"
+              />
+              <label class="form-check-label" for="inlineRadio1">MySQL</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input
+                class="form-check-input"
+                type="radio"
+                name="inlineRadioOptions"
+                id="inlineRadio2"
+                value="option2"
+              />
+              <label class="form-check-label" for="inlineRadio2"
+                >PostgreSQL</label
+              >
             </div>
           </div>
         </div>
         <div class="mb-3">
-          <label for="InputUsername" class="form-label">username</label>
+          <label for="InputUsername" class="form-label">Username</label>
           <input type="email" class="form-control" id="InputUsername" />
         </div>
         <div class="mb-3">
-          <label for="InputPassword" class="form-label">password</label>
+          <label for="InputPassword" class="form-label">Password</label>
           <input type="password" class="form-control" id="InputPassword" />
         </div>
         <div class="mb-3">
-          <label for="InputHost" class="form-label">host</label>
+          <label for="InputHost" class="form-label">Host</label>
           <input type="text" class="form-control" id="InputHost" />
         </div>
         <div class="PortDBName">
           <div class="mb-3">
-            <label for="InputPort" class="form-label">port</label>
+            <label for="InputPort" class="form-label">Port</label>
             <input type="number" class="form-control" id="InputPort" />
           </div>
           <div class="mb-3">
-            <label for="InputDBName" class="form-label">name</label>
+            <label for="InputDBName" class="form-label">Name</label>
             <input type="text" class="form-control" id="InputDBName" />
           </div>
         </div>
