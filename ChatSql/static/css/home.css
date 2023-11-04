@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Urbanist:wght@500&display=swap");
+
+.HomeNavBar {
+  background: #28282b;
+  color: #e5e4e2;
+  width: 100%;
+}
+
+.NavBarR {
+  display: flex;
+  gap: 5%;
+}
+
+.WelcomeSection {
+  color: #e5e4e2;
+}
+
+.WSL1 {
+  width: 20001px;
+  height: 200px;
+  background-color: #8A9A5B;
+}
