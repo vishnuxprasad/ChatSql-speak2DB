@@ -1,0 +1,5 @@
+pip install python-dotenv
+pip install pymysql
+pip install pyscopg2
+pip install langchain==0.0.209
+pip install openai

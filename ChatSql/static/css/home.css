@@ -1,22 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Urbanist:wght@500&display=swap");
-
 .HomeNavBar {
-  background: #28282b;
-  color: #e5e4e2;
-  width: 100%;
+    padding:16px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background: black;
 }
 
-.NavBarR {
-  display: flex;
-  gap: 5%;
+.HomeNavBar .Logo{
+    flex:1;
 }
 
-.WelcomeSection {
-  color: #e5e4e2;
+.HomeNavBar .NavBarR{
+    flex: 0.8;
+    display: flex;
+    justify-content: space-around;
 }
 
-.WSL1 {
-  width: 20001px;
-  height: 200px;
-  background-color: #8A9A5B;
+.HomeNavBar .NavBarR > *{
+    margin: 0 10px 0 10px;
 }

@@ -1,2 +1,4 @@
 venv/
 ChatSql/.env
+__pycache__/
+*.py[cod]
