@@ -1,0 +1,78 @@
+body{
+    background-color: #28282b;
+    color: #E5E4E2;
+  }
+    .messages-box {
+      flex: 1;
+      overflow-y: auto;
+    }
+
+    .messages-list {
+      padding-left: 0;
+    }
+
+    .message {
+      margin-left:10%;
+      margin-bottom: 15px;
+      list-style: none;
+      border-radius: 15px;
+      height: auto;
+      padding-left: 10px;
+      width:80%;
+    }
+
+    .message-text {
+      padding: 10px;
+      border-radius: 20px;
+    }
+
+    .sent {
+      background-color: #1E1E1E;
+      align-self: flex-end;
+    }
+
+    .received {
+      background-color: #8A9A5B;
+      align-self: flex-start;
+    }
+
+    .message-form {
+      display: flex;
+      position: fixed;
+      bottom: 30px;
+      left: 0;
+      right: 0;
+      padding: 5px;
+      height: 88px;
+      margin-left: 10%;
+      margin-right: 10%;
+      
+    }
+
+    .message-input {
+      flex: 1;
+      border-right: none;
+      border-radius: 10px;
+      background: #1E1E1E;
+      height: 45px
+    }
+
+    .btn-submit {
+      bottom: 0px;
+      border-radius: 10px;
+      background: #8A9A5B;
+      height: 45px;
+    }
+
+    .message-box-color {
+      background-color: #28282b;
+    }
+    .chat-container {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card{
+      background-color: #28282b;
+    }
