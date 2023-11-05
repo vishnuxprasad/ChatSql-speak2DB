@@ -25,7 +25,7 @@ pip install openai
 ```
 ## Getting Started
 
-Follow these steps to run the Chatsql project:
+Follow these steps to run the ChatSQL project:
 
 1. Clone the repository:
 
@@ -84,8 +84,8 @@ To connect with a database and interact with ChatSQL, follow these steps:
 
 1. Open the ChatSQL web interface.
 
-2. Provide the necessary database credentials.
+2. Provide the necessary database credentials and connect to the database.
 
-3. Enter natural language queries related to the database.
+3. Enter natural language queries related to the database connected.
 
 4. ChatSQL will process your queries using LangChain and OpenAI, and provide natural language responses.
