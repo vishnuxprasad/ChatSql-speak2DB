@@ -61,7 +61,7 @@ Follow these steps to run the ChatSQL project:
    ```
    # .env
 
-   DATABASE_URL=your_database_url
+   DATABASE_CREDENTIALS
    OPENAI_API_KEY=your_openai_api_key
    ```
 
