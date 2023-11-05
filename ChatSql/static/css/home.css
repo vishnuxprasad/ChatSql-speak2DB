@@ -1,23 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Urbanist:wght@500&display=swap");
+
+body {
+  background: #28282b;
+  margin-top: 7%;
+  margin-bottom: 5%;
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
 .HomeNavBar {
-    padding:16px;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-    background: black;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  color: #e5e4e2;
+  background: #28282b;
+  flex-wrap: wrap;
 }
 
-.HomeNavBar .Logo{
-    flex:1;
+.HomeNavBar h4 {
+  font-size: 22px;
+  text-align: center;
 }
 
-.HomeNavBar .NavBarR{
-    flex: 0.8;
-    display: flex;
-    justify-content: space-around;
+.HomeNavBar .Logo {
+  flex: 1;
 }
 
-.HomeNavBar .NavBarR > *{
-    margin: 0 10px 0 10px;
+.HomeNavBar .NavBarR {
+  flex: 0.8;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.HomeNavBar .NavBarR > * {
+  margin: 0 10px 0 10px;
+}
+
+.btn-primary img {
+  position: relative;
+  height: 0.8em;
+  margin: 7px;
+}
+
+.btn-primary {
+  justify-content: center;
+  padding: 15px;
+  font-size: 18px;
+  align-items: center;
+  border-color: #8a9a5b;
+  background: #8a9a5b;
+  color: #fff;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.btn-primary:hover {
+  background: #5d5a5a;
+  border-color: #666362;
+}
+
+.WelcomeTxtSection {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  width: 55%;
+  z-index: 3;
+  position: absolute;
+}
+
+.WelcomeTxtSection1 .WSL1 {
+  width: 5%;
+  height: 2px;
+  background: #8a9a5b;
+}
+
+.WelcomeTxtSection1 p {
+  text-align: center;
+}
+
+.WelcomeTxtSection1 {
+  display: flex;
+  align-items: center;
+  gap: 0.5%;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.WelcomeTxtSection1 .WSL2 {
+  width: 35%;
+  height: 2px;
+  background: linear-gradient(
+    270deg,
+    rgba(102, 99, 98, 0) 20.17%,
+    #8a9a5b 100%
+  );
+}
+
+.WelcomeTxtSection2 p1 {
+  font-family: "Urbanist", sans-serif;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 600;
+  color: #e5e4e2;
+}
+
+.WelcomeTxtSection2 p2 {
+  font-family: "Urbanist", sans-serif;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 600;
+  color: #8a9a5b;
+}
+
+.WelcomeTxtSection3 {
+  width: 95%;
+  color: #e5e4e2;
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.WelcomeImgSection {
+  margin-left: 50%;
+
+  width: fit-content;
+  z-index: 1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  mix-blend-mode: luminosity;
+}
+
+.WelcomeSection {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.AboutTxtSection {
+  padding-bottom: 3%;
+}
+
+.AboutTxtSection1 .ASL1 {
+  width: 15%;
+  height: 2px;
+  background: #8a9a5b;
+}
+
+.AboutTxtSection1 p {
+  text-align: center;
+}
+
+.AboutTxtSection1 {
+  display: flex;
+  align-items: center;
+  gap: 3%;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.AboutTxtSection1 .ASL2 {
+  width: 55%;
+  height: 2px;
+  background: linear-gradient(
+    270deg,
+    rgba(102, 99, 98, 0) 20.17%,
+    #8a9a5b 100%
+  );
+}
+
+.AboutTxtSection2 p1 {
+  font-family: "Urbanist", sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  color: #e5e4e2;
+}
+
+.AboutTxtSection2 p2 {
+  font-family: "Urbanist", sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  color: #8a9a5b;
+}
+
+.About {
+  color: #e5e4e2;
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.AboutSection {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.FeatureTxtSection {
+  padding-bottom: 3%;
+}
+
+.FeatureTxtSection1 .FSL1 {
+  width: 2%;
+  height: 2px;
+  background: #8a9a5b;
+}
+
+.FeatureTxtSection1 p {
+  text-align: center;
+}
+
+.FeatureTxtSection1 {
+  display: flex;
+  align-items: center;
+  gap: .3%;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.FeatureTxtSection1 .FSL2 {
+  width: 10%;
+  height: 2px;
+  background: linear-gradient(
+    270deg,
+    rgba(102, 99, 98, 0) 20.17%,
+    #8a9a5b 100%
+  );
+}
+
+.FeatureTxtSection2 p1 {
+  font-family: "Urbanist", sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  color: #e5e4e2;
+}
+
+.FeatureTxtSection2 p2 {
+  font-family: "Urbanist", sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 600;
+  color: #8a9a5b;
+}
+
+.FeatureSection {
+  padding-top: 4%;
+}
+
+.FC1, .FC2, .FC3 {
+  height: 320px;
+  width:400px;
+  border-radius: 20px;
+  background: #666362;
+  padding: 20px;
+}
+
+.FeatrureCardContainer {
+  display: flex; 
+  justify-content: space-around; 
+}
+
+.FeatrureCard {
+  font-family: "Poppins", sans-serif;
+  color: #e5e4e2;
+  gap: 3%;
+  display: flex;
+  flex-direction: row;
+}
+
+.FC1, .FC2, .FC3 {
+  flex: 1; 
+  padding: 40px;
+  margin: 20px;
+}
+
+.FC1, .FC2, .FC3 {
+  flex: 1;
+  padding: 40px;
+  margin: 20px;
+  transition: background-color 0.3s;
+}
+
+.FC1:hover, .FC2:hover, .FC3:hover {
+  background-color: #8a9a5b;
+  cursor: pointer;
 }
