@@ -82,7 +82,7 @@ Follow these steps to run the Chatsql project:
 ## Usage
 To connect with a database and interact with ChatSQL, follow these steps:
 
-1. Open the Chatsql web interface.
+1. Open the ChatSQL web interface.
 
 2. Provide the necessary database credentials.
 
