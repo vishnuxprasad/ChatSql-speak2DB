@@ -40,11 +40,12 @@ body {
   align-items: center;
 }
 
-.HomeNavBar .NavBarR > * {
+.HomeNavBar .NavBarR>* {
   margin: 0 10px 0 10px;
 }
-.btn{
-    padding:10px;
+
+.btn {
+  padding: 10px;
 }
 
 .btn-primary img {
@@ -104,11 +105,9 @@ body {
 .WelcomeTxtSection1 .WSL2 {
   width: 35%;
   height: 2px;
-  background: linear-gradient(
-    270deg,
-    rgba(102, 99, 98, 0) 20.17%,
-    #8a9a5b 100%
-  );
+  background: linear-gradient(270deg,
+      rgba(102, 99, 98, 0) 20.17%,
+      #8a9a5b 100%);
 }
 
 .WelcomeTxtSection2 p1 {
@@ -180,11 +179,9 @@ body {
 .AboutTxtSection1 .ASL2 {
   width: 55%;
   height: 2px;
-  background: linear-gradient(
-    270deg,
-    rgba(102, 99, 98, 0) 20.17%,
-    #8a9a5b 100%
-  );
+  background: linear-gradient(270deg,
+      rgba(102, 99, 98, 0) 20.17%,
+      #8a9a5b 100%);
 }
 
 .AboutTxtSection2 p1 {
@@ -245,11 +242,9 @@ body {
 .FeatureTxtSection1 .FSL2 {
   width: 10%;
   height: 2px;
-  background: linear-gradient(
-    270deg,
-    rgba(102, 99, 98, 0) 20.17%,
-    #8a9a5b 100%
-  );
+  background: linear-gradient(270deg,
+      rgba(102, 99, 98, 0) 20.17%,
+      #8a9a5b 100%);
 }
 
 .FeatureTxtSection2 p1 {
@@ -272,17 +267,19 @@ body {
   padding-top: 4%;
 }
 
-.FC1, .FC2, .FC3 {
+.FC1,
+.FC2,
+.FC3 {
   height: 320px;
-  width:400px;
+  width: 400px;
   border-radius: 20px;
   background: #666362;
   padding: 20px;
 }
 
 .FeatrureCardContainer {
-  display: flex; 
-  justify-content: space-around; 
+  display: flex;
+  justify-content: space-around;
 }
 
 .FeatrureCard {
@@ -293,20 +290,26 @@ body {
   flex-direction: row;
 }
 
-.FC1, .FC2, .FC3 {
-  flex: 1; 
+.FC1,
+.FC2,
+.FC3 {
+  flex: 1;
   padding: 40px;
   margin: 20px;
 }
 
-.FC1, .FC2, .FC3 {
+.FC1,
+.FC2,
+.FC3 {
   flex: 1;
   padding: 40px;
   margin: 20px;
   transition: background-color 0.3s;
 }
 
-.FC1:hover, .FC2:hover, .FC3:hover {
+.FC1:hover,
+.FC2:hover,
+.FC3:hover {
   background-color: #8a9a5b;
   cursor: pointer;
 }

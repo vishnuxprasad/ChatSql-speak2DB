@@ -1,110 +1,102 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <title>Chatbot</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="{% static 'css/chat.css' %}"
-    />
-  </head>
-  <body>
-    <div class="HomeNavBar">
-      <div class="Logo">
-        <img src="{% static 'images/logo.svg' %}" alt="ChatSql" />
-      </div>
-      <div class="NavBarR">
-        <div class="NavBtn">
-          <button type="submit" id="disconnectBtn" class="btn btn-secondary btn-style">Disconnect</button>
-        </div>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Chatbot</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="{% static 'css/chat.css' %}" />
+</head>
+
+<body>
+  <div class="HomeNavBar">
+    <div class="Logo">
+      <img src="{% static 'images/logo.svg' %}" alt="ChatSql" />
+    </div>
+    <div class="NavBarR">
+      <div class="NavBtn">
+        <button type="submit" id="disconnectBtn" class="btn btn-secondary btn-style">Disconnect</button>
       </div>
     </div>
+  </div>
 
-    <script>
-      const disconnectButton = document.getElementById('disconnectBtn');
-      disconnectButton.addEventListener('click', function() {
-        window.location.href = '/'; 
-      });
-    </script>
-    
-    </div>
-    <div class="chat-container">
-      <div class="card flex-grow-1">
-        <div class="card-body messages-box">
-          <ul class="list-unstyled messages-list">
-            <li class="message received">
-              <div class="message-text">
-                <div class="message-sender">
-                  <b>SQL Chatbot</b>
-                </div>
-                <div class="message-content"> Hi there! How can I assist you today?</div>
+  <script>
+    const disconnectButton = document.getElementById('disconnectBtn');
+    disconnectButton.addEventListener('click', function () {
+      window.location.href = '/';
+    });
+  </script>
+
+  </div>
+  <div class="chat-container">
+    <div class="card flex-grow-1">
+      <div class="card-body messages-box">
+        <ul class="list-unstyled messages-list">
+          <li class="message received">
+            <div class="message-text">
+              <div class="message-sender">
+                <b>SQL Chatbot</b>
               </div>
-            </li>
+              <div class="message-content"> Hi there! How can I assist you today?</div>
+            </div>
+          </li>
 
-            {% for chat in chats %}
+          {% for chat in chats %}
 
-            <li class="message sent">
-              <div class="message-text">
-                <div class="message-sender">
-                  <b>You</b>
-                </div>
-                <div class="message-content">{{chat.message}}</div>
+          <li class="message sent">
+            <div class="message-text">
+              <div class="message-sender">
+                <b>You</b>
               </div>
-            </li>
+              <div class="message-content">{{chat.message}}</div>
+            </div>
+          </li>
 
-            <li class="message received">
-              <div class="message-text">
-                <div class="message-sender">
-                  <b>AI Chatbot</b>
-                </div>
-                <div class="message-content">{{chat.response}}</div>
+          <li class="message received">
+            <div class="message-text">
+              <div class="message-sender">
+                <b>AI Chatbot</b>
               </div>
-            </li>
+              <div class="message-content">{{chat.response}}</div>
+            </div>
+          </li>
 
-            {% endfor %}
-          </ul>
-        </div>
-        <br /><br />
-        <br /><br />
-        <br /><br />
+          {% endfor %}
+        </ul>
       </div>
-      <form class="message-form">
-        {%csrf_token%}
-        <div class="input-group">
-          <input type="text" class="form-control message-input" placeholder="Type your message...">
-          <div class="input-group-append">
-            <button type="submit" class="btn  btn-submit">Send</button>
-          </div>
-        </div>
-      </form>
+      <br /><br />
+      <br /><br />
+      <br /><br />
     </div>
+    <form class="message-form">
+      {%csrf_token%}
+      <div class="input-group">
+        <input type="text" class="form-control message-input" placeholder="Type your message...">
+        <div class="input-group-append">
+          <button type="submit" class="btn  btn-submit">Send</button>
+        </div>
+      </div>
+    </form>
+  </div>
 
-    <script>
-      const messagesList = document.querySelector('.messages-list');
-      const messageForm = document.querySelector('.message-form');
-      const messageInput = document.querySelector('.message-input');
+  <script>
+    const messagesList = document.querySelector('.messages-list');
+    const messageForm = document.querySelector('.message-form');
+    const messageInput = document.querySelector('.message-input');
 
-      messageForm.addEventListener('submit', (event) => {
-        event.preventDefault();
+    messageForm.addEventListener('submit', (event) => {
+      event.preventDefault();
 
-        const message = messageInput.value.trim();
-        if (message.length === 0) {
-          return;
-        }
+      const message = messageInput.value.trim();
+      if (message.length === 0) {
+        return;
+      }
 
-        const messageItem = document.createElement('li');
-        messageItem.classList.add('message', 'sent');
-        messageItem.innerHTML = `
+      const messageItem = document.createElement('li');
+      messageItem.classList.add('message', 'sent');
+      messageItem.innerHTML = `
             <div class="message-text">
                 <div class="message-sender">
                     <b>You</b>
@@ -113,37 +105,38 @@
                     ${message}
                 </div>
             </div>`;
-        messagesList.appendChild(messageItem);
+      messagesList.appendChild(messageItem);
 
-        messageInput.value = '';
-        console.log(message);
-         fetch('{% url 'chat' %}', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-          body: new URLSearchParams({
-            'csrfmiddlewaretoken': document.querySelector('[name=csrfmiddlewaretoken]').value,
-            'message': message
-          })
+      messageInput.value = '';
+      console.log(message);
+      fetch('{% url 'chat' %}', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: new URLSearchParams({
+          'csrfmiddlewaretoken': document.querySelector('[name=csrfmiddlewaretoken]').value,
+          'message': message
         })
-          .then(response => response.json())
-          .then(data => {
-            const response = data.response;
+      })
+        .then(response => response.json())
+        .then(data => {
+          const response = data.response;
 
-            const messageItem = document.createElement('li');
-            messageItem.classList.add('message', 'received');
-            messageItem.innerHTML = `
+          const messageItem = document.createElement('li');
+          messageItem.classList.add('message', 'received');
+          messageItem.innerHTML = `
             <div class="message-text">
                 <div class="message-content">
                     ${response}
                 </div>
             </div>
               `;
-            messagesList.appendChild(messageItem);
-          });
-      });
-    </script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  </body>
+          messagesList.appendChild(messageItem);
+        });
+    });
+  </script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
 </html>
