@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from .models import DatabaseConnection
 from .forms import DatabaseConnectionForm
-from langchain import OpenAI, SQLDatabase, SQLDatabaseChain
+#from langchain import OpenAI, SQLDatabase, SQLDatabaseChain
 from django.http import JsonResponse
 from django.views.decorators.csrf import csrf_exempt
 from dotenv import load_dotenv
