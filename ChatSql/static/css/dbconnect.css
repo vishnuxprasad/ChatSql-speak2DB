@@ -2,11 +2,25 @@
 
 body {
   background: #28282b;
-  margin-bottom: 5%;
+
+}
+
+
+.HomeNavBar {
+  
+  padding:16px;
+  width: 100%;
+  justify-content: center;
+  color: white;
+}
+
+.HomeNavBar .Logo{
+  flex:1;
+  padding:35px;
 }
 
 .Intro {
-  margin-bottom: 1%;
+  margin-bottom: 60px;
   width: 66%;
   text-align: center;
 }
@@ -18,6 +32,7 @@ body {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  margin-bottom: 20px;
 }
 
 .Intro p {
@@ -37,14 +52,25 @@ body {
   background: #1e1e1e;
 }
 
-.SelectDB {
+.DBSelect {
+  width: 100%; /* Set the width to 100% to make it the same width as the container */
+}
+
+/* Style the select element */
+.form-select {
   color: #e5e4e2;
   font-family: "Poppins", sans-serif;
-  font-size: var(--bs-body-font-size);
-  display: flex;
-  flex-wrap: wrap;
-  gap: 7%;
-  padding-bottom: 2%;
+  background-color: #1e1e1e;
+  padding: 8px; 
+  border: 1px solid #ffffff; 
+  border-radius: 5px; /
+}
+
+/* Style the select options */
+.form-select option {
+  background-color: #1e1e1e;
+  color: #e5e4e2;
+  font-family: "Poppins", sans-serif;
 }
 
 .form-label,
