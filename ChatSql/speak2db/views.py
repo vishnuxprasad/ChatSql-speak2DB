@@ -62,12 +62,10 @@ def chat(request):
             if request.method == 'GET':
                   # Render the initial chatbot interface
                   return render(request, 'chat.html')
-            if request.method == 'POST':
-                 return JsonResponse({'response': 'hello'})
+            
             if db_uri is None:
                  return JsonResponse({'response': 'Database connection not established'})
             response = ""
-            '''
             if request.method == 'POST':
 
 
@@ -83,6 +81,5 @@ def chat(request):
                 response = db_chain.run(query)
             
             return JsonResponse({'response': response})
-            '''
 
 
